@@ -1,0 +1,628 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+	max-width: 1200px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.clear{clear: both;}
+
+header .menu{
+	margin: 0 auto;
+	width: 100%;
+	position: relative;
+	z-index: 2;
+	padding: 10px 8%;
+}
+
+.logo h3{
+	width: 100%;
+	max-width: 150px;
+	position: relative;
+	z-index: 2;
+	color: white;
+    float: left;
+    font-size: 2rem;
+}
+
+nav.desktop-menu{
+	position: relative;
+	z-index: 2;
+	float: right;
+}
+
+nav.desktop-menu ul{
+	list-style-type: none;
+}
+
+nav.desktop-menu li{
+	height: 100%;
+	display: inline-block;
+	margin: 10px 30px;
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+nav.desktop-menu a{
+	color: white;
+	text-decoration: none;
+}
+
+.banner{
+	position: relative;
+	background-image: url('banner.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	padding: 15px 0;
+	min-height: 700px;
+}
+
+.layer{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.8);
+	z-index: 1;
+}
+
+.banner{
+	z-index: 2;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.banner h1{
+	width: 100%;
+	z-index: 2;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	color: white;
+	/* text-transform: uppercase; */
+	font-size:5rem;
+	text-align: right;
+	transform: translate(-50%, -40%);
+    font-family: 'Allura';
+    font-weight: lighter;
+    color:#249faf ;
+    padding: 0 3%;
+}
+
+.banner p{
+	width: 100%;
+	font-family: 'Josefin Slab', serif;
+	z-index: 2;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: white;
+	font-size:2.5rem;
+	text-align: right;
+	transform: translate(-50%, -50%);
+	font-weight: lighter;
+    margin-top: 10px;
+    padding: 0 3%;
+}
+
+.banner h4{
+    padding: 0 3%;
+	width: 100%;
+	z-index: 2;
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	margin-top:15px;
+	color: white;
+	text-transform: uppercase;
+	font-size:2.3rem;
+	text-align: right;
+	transform: translate(-50%, -40%);
+    font-family: 'Josefin Slab', serif;
+}
+
+.desktop-menu a:hover{
+	color: 	#249faf;
+	text-decoration: none;
+}
+
+nav.mobile{
+	display: none;
+	float: right;
+}
+
+
+
+nav.mobile img{
+	position: relative;
+	top: 5px;
+	width: 32px;
+	color: rgb(197, 102, 102);
+	cursor: pointer;
+}
+
+nav.mobile ul{
+	z-index: 999;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 60px;
+	width: 100%;
+	list-style-type: none;
+
+	margin-bottom: 50px;
+}
+
+nav.mobile li{
+	text-align: center;
+	font-weight: lighter;
+	border: 1px solid #444;
+	padding: 8px 0;
+}
+
+
+nav.mobile a{
+	display: block;
+	text-decoration: none;
+	color: white;
+}
+
+.somos{
+    width: 100%;
+	padding: 20px 2%;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.somos > .container{
+    max-width: 1000px;
+    text-align: center;
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.flex > div{
+    flex: 1 1 200px;
+}
+
+.somos img{
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+    max-height: 300px;
+}
+
+.quem p{
+	width: 100%;
+    max-width: 450px;
+    padding: 0 10%;
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    text-align: justify;
+}
+
+.quem h1{
+	font-size: 28px;
+	margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 0 8%;
+    font-family: 'Allura', cursive;
+	color:#249faf;
+	text-align: center;
+	
+}
+
+.btn1 input[type=submit]{
+	width: 170px;
+	height: 48px;
+	border: 1px solid #249faf;
+	background-color: white;
+	cursor: pointer;
+	color: #249faf;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 0 8%;
+}
+
+.btn1 input[type=submit]:hover{
+    color: white;
+    background-color: #249faf;
+}
+
+.banner-frase{
+	position: relative;
+	background-image: url('banner2.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	padding: 15px 0;
+	min-height: 500px;
+	z-index: 2;
+	position: relative;
+	padding-bottom: 10px;
+}
+
+.layer-frase{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 1;
+}
+
+
+.banner-frase p{
+	width: 100%;
+	z-index: 2;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	color: white;
+	font-size:3.5rem;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	font-weight: lighter;
+    margin-top: 20px;
+    font-family: 'Josefin Slab', serif;
+}
+
+.flex-cardapio{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 5%;
+}
+
+.flex-cardapio > div{
+    flex: 1 1 400px;
+}
+
+.cardapio-single{
+    width: 100%;
+    margin-top: 50px;
+   padding: 0 50px;
+}
+
+.cardapio-single h1{
+    font-family: 'Allura', cursive;
+    font-size: 48px;
+    color: #249faf;
+    font-weight: lighter;
+}
+
+.cardapio-single h3{
+    font-size: 56px;
+    font-weight: bold;
+    font-family: 'Josefin Slab', serif;
+}
+
+.cardapio-single p{
+    text-align: left;
+    font-size: 21px;
+    border-bottom: 1px solid #ccc;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.cardapio-single span{
+    font-size: 18px;
+
+    margin-top: 15px;
+}
+
+#equipe{
+	padding: 20px 0;
+	background-color: rgb(245,245,245);
+	
+}
+
+#equipe .flex-metas {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+	line-height: 20px;
+}
+#equipe h2{
+	text-align: center;
+	font-family: 'Josefin Slab', serif;
+    color:#249faf;
+}
+
+.metas-single{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+max-width: 300px;    
+
+margin: 0 auto;
+padding: 4% 1%;
+}
+
+#equipe p {
+	padding: 10px;
+	font-size: 18px;
+	font-family: 'Merriweather', serif;
+
+}
+
+#equipe img {
+    width: 90px;
+    height:90px ;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    padding: 4px;
+}
+#equipe img:hover {
+    background-color: #249faf;
+    border-radius: 25%;
+    transition: 500ms;
+}
+
+.flex-historia{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 50px 2%;
+}
+
+.flex-historia > div{
+    flex: 1 1 450px;
+}
+
+.title-historia{
+    font-size: 35px;
+}
+
+.title-historia h1{
+    color: #ccc;
+    font-weight: lighter;
+}
+
+.title-historia h3{
+    color: #249faf;
+    font-weight: lighter;
+}
+
+.texto p{
+    text-align: justify;
+    font-family: 'Merriweather', serif;
+	padding: 0 3%;
+}
+
+footer{
+    background-color: rgb(245,245,245);
+    padding: 30px 2%;
+    font-family: 'Merriweather', serif;
+
+}
+
+.flex-footer{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-footer > div{
+    flex: 1 1 600px;
+}
+
+footer h1{
+    font-size: 18px;
+}
+
+footer h5,p{
+    font-size: 18px;
+}
+
+/* Bebidas.html*/
+
+.logo h2{
+	width: 100%;
+	max-width: 150px;
+	position: relative;
+	z-index: 2;
+	color: #249faf;
+    float: left;
+    font-size: 2rem;
+}
+
+nav.desktop{
+	position: relative;
+	z-index: 2;
+	float: right;
+}
+
+nav.desktop ul{
+	list-style-type: none;
+}
+
+nav.desktop li{
+	height: 100%;
+	display: inline-block;
+	margin: 10px 30px;
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+nav.desktop a{
+	color: #249faf;
+	text-decoration: none;
+}
+
+.mosaico{
+    margin-top: 20px;
+}
+
+.flex-mosaico{
+    display: flex;
+}
+
+.item-1-mosaico{
+	background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+	width: 100%;
+}
+
+.item-2-mosaico{
+    font-family: 'Allura', cursive;
+	background-color:white;
+	width: 100%;
+    padding:100px 40px;
+    color: #249faf;
+    font-size: 18px;
+}
+
+.mosaico p{
+    color: black;
+    margin-top: 8px;
+    text-align: justify;
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+}
+
+.mosaico h3{
+    color: black;
+    margin-top: 8px;
+    text-align: center;
+    font-family: 'Josefin Slab', serif;
+}
+
+nav.mobile-b{
+	display: none;
+	float: right;
+}
+
+
+
+nav.mobile-b img{
+    width: 32px;
+    height: 32px;
+}
+
+nav.mobile-b ul{
+	z-index: 999;
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 60px;
+	width: 100%;
+	list-style-type: none;
+
+	margin-bottom: 50px;
+}
+
+nav.mobile-b li{
+	text-align: center;
+	font-weight: lighter;
+	border: 1px solid #444;
+	padding: 8px 0;
+}
+
+
+nav.mobile-b a{
+	display: block;
+	text-decoration: none;
+	color: #249faf;
+}
+
+/**/
+
+@media screen and (max-width: 1100px){
+	:root{
+		font-size: 80%;
+	}
+	header{
+			font-size: 2rem;
+}
+.banner p{
+	font-size: 2.5rem;
+}
+
+.banner-frase p{
+	font-size: 5rem;
+}
+}
+
+@media screen and (max-width:900px){
+	
+
+	.flex-footer{
+		display: block;
+		text-align: center;
+		padding: 30px 2%;	
+		margin: 0 auto;
+		align-items: center;
+		justify-content: space-between;
+	}
+	
+} 
+
+@media screen and (max-width: 850px){
+	nav.mobile, mobile-b{
+		display: block;
+		margin-bottom: 80px;
+	}
+
+    nav.desktop-menu, .desktop{display: none;}
+    
+	.banner h1, p{
+		margin-top: 30px;
+		font-size: 2rem;
+	}
+
+	.banner-frase p{
+		font-size: 1.8rem;
+    }
+    
+    .somos img{
+        width: 100%;
+        max-width: 500px;
+        height: 100%;
+        max-height: 300px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    
+    .quem p{
+        max-width: 350px;
+        margin: 0 auto;
+        font-size: 16px;
+        font-family: 'Merriweather', serif;
+        text-align: justify;
+    }
+    
+    .somos h1{
+        font-size: 32px;
+        margin-bottom: 40px;
+        font-family: 'Allura', cursive;
+        color:#249faf;
+    }
+
+}
+
+@media screen and (max-width: 600px){
+	:root{
+		font-size: 70%;
+	}
+
+	.banner p{
+		margin-top: 20px;
+	}
+}
